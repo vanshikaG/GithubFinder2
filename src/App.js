@@ -1,4 +1,6 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom' 
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
@@ -8,23 +10,19 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <Router>
-      <div className='flex flex-col justify-between h-screen'>
-        <Navbar/>
-        <main className='container mx-auto px-3 pb-12'>
+      <div className="flex flex-col justify-between h-screen">
+        <Navbar />
+        <main className="container mx-auto px-3 pb-12">
           <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/notfound' element={<NotFound/>}/>
-            <Route path='/*' element={<NotFound/>}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/notfound" element={<NotFound />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
         </main>
-        <Footer/>
+        <Footer />
       </div>
-
-
-    
     </Router>
   );
 }
- 
 export default App;

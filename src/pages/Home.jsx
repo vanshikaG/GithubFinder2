@@ -1,9 +1,9 @@
-function Home(){
-    return(
-        <div>
-            Home
-        </div>
-    )
+/* eslint-disable react/react-in-jsx-scope */
+function Home() {
+  return (
+    <div>
+      <h1 className="text-6xl">Welcome</h1>
+    </div>
+  );
 }
-
-export default Home
+export default Home;
